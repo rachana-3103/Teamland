@@ -1,0 +1,67 @@
+const uuid = require('uuid');
+
+module.exports = {
+    up: (queryInterface) => queryInterface.bulkInsert('question_master', [
+        {
+            id: uuid.v4(),
+            category: 'animal',
+            question_id: uuid.v4(),
+            option: 'cat',
+            image_url: 'https://teamlandapp.s3.us-east-2.amazonaws.com/images/fb1e9af2-fbaa-4396-893c-5986d078ee16/optionB.jpg',
+            level: 'level 1',
+            createdAt: new Date(),
+            updatedAt: new Date(),
+        },
+        {
+            id: uuid.v4(),
+            category: 'animal',
+            question_id: uuid.v4(),
+            option: 'dog',
+            image_url: 'https://teamlandapp.s3.us-east-2.amazonaws.com/images/fb1e9af2-fbaa-4396-893c-5986d078ee16/optionA.jpg',
+            level: 'level 1',
+            createdAt: new Date(),
+            updatedAt: new Date(),
+        },
+        {
+            id: uuid.v4(),
+            category: 'animal',
+            question_id: uuid.v4(),
+            option: 'main-content',
+            image_url: 'https://teamlandapp.s3.us-east-2.amazonaws.com/images/fb1e9af2-fbaa-4396-893c-5986d078ee16/main-content.jpg',
+            level: 'level 1',
+            createdAt: new Date(),
+            updatedAt: new Date(),
+        },
+        {
+            id: uuid.v4(),
+            category: 'food',
+            question_id: uuid.v4(),
+            option: 'Burger',
+            image_url: 'https://teamlandapp.s3.us-east-2.amazonaws.com/images/f292e33d-40d0-4f9b-8e5b-413dd30cdce4/optionB.jpg',
+            level: 'level 1',
+            createdAt: new Date(),
+            updatedAt: new Date(),
+        },{
+            id: uuid.v4(),
+            category: 'food',
+            question_id: uuid.v4(),
+            option: 'Hot Dog',
+            image_url: 'https://teamlandapp.s3.us-east-2.amazonaws.com/images/f292e33d-40d0-4f9b-8e5b-413dd30cdce4/optionA.jpg',
+            level: 'level 1',
+            createdAt: new Date(),
+            updatedAt: new Date(),
+        },
+        {
+            id: uuid.v4(),
+            category: 'food',
+            question_id: uuid.v4(),
+            option: 'main-content',
+            image_url: 'https://teamlandapp.s3.us-east-2.amazonaws.com/images/f292e33d-40d0-4f9b-8e5b-413dd30cdce4/main-content.jpg',
+            level: 'level 1',
+            createdAt: new Date(),
+            updatedAt: new Date(),
+        },
+    ], {}),
+
+    down: (queryInterface) => queryInterface.bulkDelete('question_master', null, {}),
+};
