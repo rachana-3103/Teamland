@@ -1,4 +1,4 @@
-# Teamland-Backend
+# Teamland
 ## _with CICD and Jest test framework_
 
 [![Node.js CI](https://github.com/n23khan/teamland/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/n23khan/teamland/actions/workflows/ci.yml)
